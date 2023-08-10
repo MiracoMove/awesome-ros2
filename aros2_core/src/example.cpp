@@ -3,7 +3,7 @@
 #include "aros2_core/service_client.hpp"
 #include "aros2_core/service.hpp"
 
-int main(int argc, char ** argv)
+int main()
 {
   return 0;
 }

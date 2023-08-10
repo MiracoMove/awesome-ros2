@@ -142,6 +142,7 @@ public:
    */
   virtual CallbackReturn on_configure(const rclcpp_lifecycle::State & state)
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
@@ -153,6 +154,7 @@ public:
    */
   virtual CallbackReturn on_activate(const rclcpp_lifecycle::State & state)
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
@@ -164,6 +166,7 @@ public:
    */
   virtual CallbackReturn on_deactivate(const rclcpp_lifecycle::State & state)
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
@@ -175,6 +178,7 @@ public:
    */
   virtual CallbackReturn on_error(const rclcpp_lifecycle::State & state)
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
@@ -185,16 +189,18 @@ public:
    */
   virtual void on_destroy(const rclcpp_lifecycle::State & state)
   {
-
+    (void)state;
   }
 
   CallbackReturn on_cleanup(const rclcpp_lifecycle::State & state) final
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
   CallbackReturn on_shutdown(const rclcpp_lifecycle::State & state) final
   {
+    (void)state;
     return CallbackReturn::SUCCESS;
   }
 
